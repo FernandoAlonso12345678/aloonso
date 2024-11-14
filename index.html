@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .profile {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            width: 80%;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .profile-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-img img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4CAF50;
+        }
+
+        .profile-details {
+            flex: 2;
+            padding-left: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #666;
+        }
+
+        p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .extra-info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        .extra-info p {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meu Currículo</h1>
+</header>
+
+<div class="container">
+    <div class="profile">
+        <div class="profile-img">
+            <img src="data:image/jpeg;base64,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" alt="Minha Foto">
+        </div>
+
+        <div class="profile-details">
+            <h1>Fernando Alonso</h1>
+            <h2>Desenvolvedor Web</h2>
+            <p>
+                Sou um desenvolvedor apaixonado por criar soluções web inovadoras. Tenho experiência em HTML, CSS, JavaScript e outras tecnologias de front-end.
+            </p>
+            <button class="button" onclick="toggleExtraInfo()">Mais Informações</button>
+
+            <div class="extra-info" id="extraInfo">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>PHP</li>
+                    <li>Banco de Dados: MySQL</li>
+                    <li>GitHub</li>
+                </ul>
+
+                <h3>Experiência</h3>
+                <p>Trabalhei em diversos projetos, incluindo o Ecoquiz, que faz suscesso no mundo como a maior plataforma de concientização ambiental do mundo.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleExtraInfo() {
+        var extraInfo = document.getElementById("extraInfo");
+        if (extraInfo.style.display === "none" || extraInfo.style.display === "") {
+            extraInfo.style.display = "block";
+        } else {
+            extraInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
